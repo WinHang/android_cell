@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">移动推流终端</string>
+    <string name="version">1.0</string>
+<!--    <string name="stream_stat" formatted="false">编码帧率：%d,码率：%dKBps</string>-->
+    <string name="stream_stat" formatted="false">%dKBps</string>
+    <string name="camera">摄像头</string>
+    <string name="video_uploading_in_background">后台采集视频中</string>
+    <string name="video_uploading">视频传输中</string>
+    <string name="no_video_upload">未开始视频传输</string>
+
+    <string name="stop_video_uploading">停止发送</string>
+    <string name="start_video_uploading">发送视频</string>
+
+</resources>

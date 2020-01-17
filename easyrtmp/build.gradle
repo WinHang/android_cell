@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        if (project.hasProperty('RTMP_KEY')) {
+            println("RTMPKEY IS :" + RTMP_KEY)
+            buildConfigField 'String', 'RTMP_KEY', RTMP_KEY
+        } else {
+            println("NO RTMPKEY FOUND")
+            /*
+            *本Key为永久授权key
+            */
+            buildConfigField 'String', 'RTMP_KEY',
+                    "\"79397037795A36526D343041326D354E7370442B384F6C6A62323075656D743661693579644731775833526C636D3170626D46734931634D56714459384F4E4659584E355247467964326C755647566862556C7A5647686C516D567A644541794D4445345A57467A65513D3D\""
+        }
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 34
+        versionName "1.4.181114"
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        flavorDimensions "versionCode"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFiles  'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    productFlavors {
+        rtmp {}
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'update-release', ext: 'aar')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:preference-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    //WebRtc(可能会突然不管用)
+    implementation 'org.webrtc:google-webrtc:1.0.+'
+
+    implementation 'com.budiyev.android:code-scanner:1.9.4'
+}

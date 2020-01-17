@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :update-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6ef035a4e8c02fe59dce3bdbd66e9f9/update-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6ef035a4e8c02fe59dce3bdbd66e9f9/update-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

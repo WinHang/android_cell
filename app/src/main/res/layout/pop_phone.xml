@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="40dp"
+    android:gravity="center"
+    android:backgroundTintMode="src_atop"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/review"
+        android:layout_height="180dp">
+
+        <TextView
+            android:id="@+id/tv_dlsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="手机号录入"
+            android:textStyle="bold"
+            android:textColor="@color/text_black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_search_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/tv_dlsb"
+            android:text="输入你的手机号以便找到您的设备"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:layout_marginTop="35dp"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:gravity="center"
+            android:numeric="integer"
+            android:layout_below="@+id/tv_dlsb"
+            android:hint="请输入手机号"
+            android:imeOptions="actionGo"
+            android:background="@null"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/top_bar_normal_bg"
+            android:layout_below="@+id/et_phone"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/tv_gray_deep"
+            android:layout_above="@+id/btn_dl"
+            />
+
+            <Button
+                android:id="@+id/btn_dl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="确定"
+                android:textColor="@color/blue"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/select_txt"
+                />
+
+    </RelativeLayout>
+</RelativeLayout>

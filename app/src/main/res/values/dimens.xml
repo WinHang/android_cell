@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="list_font_size">18sp</dimen>
+    <dimen name="list_height_min">32dp</dimen>
+
+    <!-- ************************* 通用 ******************** -->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_normal">14dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+
+    <!-- item 大小 -->
+    <dimen name="item_height_normal">50dp</dimen>
+
+    <!--image的宽和高-->
+    <dimen name="image_height_litter">20dp</dimen>
+    <!-- ************************* 结束 ******************** -->
+
+    <!-- TitleBar height -->
+    <dimen name="dialogui_round_corner_radius">5dp</dimen>
+    <dimen name="dialogui_l_round_corner_radius">10dp</dimen>
+    <dimen name="dialogui_margin_smid">14dp</dimen>
+    <dimen name="dialogui_toast_margin">64dp</dimen>
+    <dimen name="dialogui_max_with">360dp</dimen>
+
+    <dimen name="dialogui_title_txt_size">17sp</dimen>
+    <dimen name="dialogui_btn_txt_size">14sp</dimen>
+    <dimen name="dialogui_msg_txt_size">14sp</dimen>
+    <dimen name="dialogui_input_txt_size">14sp</dimen>
+
+
+    <!-- 适配尺寸 -->
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+</resources>

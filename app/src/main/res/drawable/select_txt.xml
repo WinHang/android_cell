@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 松开时的背景图片 -->
+    <item android:drawable="@drawable/review_noclick" android:state_pressed="false" />
+
+    <!-- 单击时的背景图片 -->
+    <item android:drawable="@drawable/review_isclick" android:state_pressed="true" />
+</selector>
